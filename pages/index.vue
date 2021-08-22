@@ -34,7 +34,8 @@ export default {
   },
   head () {
     return {
-      title: `${this.dateArray[0]}年${this.dateArray[1]}月${this.dateArray[2]}日`
+      title: `アマゾンタイムセール情報ツウ！`,
+      titleTemplate: ''
     }
   }
 }
