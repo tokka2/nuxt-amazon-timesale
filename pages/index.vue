@@ -1,6 +1,6 @@
 <template>
-  <section class="container mx-auto px-4">
-    <h2 class="text-3xl">
+  <section class="container mx-auto px-2">
+    <h2 class="text-lg md:text-xl xl:text-2xl md:text-center">
       {{ dateArray[0] }}年{{ dateArray[1] }}月{{ dateArray[2] }}日のアマゾンタイムセール
     </h2>
     <ul class="flex flex-wrap">
@@ -34,7 +34,7 @@ export default {
   },
   head () {
     return {
-      title: `アマゾンタイムセール情報ツウ！`,
+      title: 'アマゾンタイムセール情報ツウ！',
       titleTemplate: ''
     }
   }
