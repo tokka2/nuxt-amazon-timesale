@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -42,13 +44,31 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://amazon-time-sale.ipon.biz',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  generate: {
+    routes () {
+      const targetUrl = 'https://tokka2.github.io/tokka_amazon_timesale'
+      return Promise.all([
+        axios.get(`${targetUrl}/updated.json`)
+      ]).then(([updated]) => {
+        return updated.data.map((datetime) => {
+          return { route: `posts/${datetime}`, payload: datetime }
+        })
+      })
+    }
   }
 }
