@@ -6,7 +6,7 @@
     <ul class="flex flex-wrap">
       <li v-for="(data, key) in datas" :key="key" class="w-full py-2 sm:w-1/2 md:w-2/6 sm:p-2 xl:w-1/4">
         <a :href="data.href" target="_blank" class="shadow-lg block p-2 bg-white transform md:scale-95 hover:scale-100">
-          <img :src="data.image" :alt="data.label" class="object-contain h-48 display-block mx-auto">
+          <img :src="data.image" :alt="data.label" class="object-contain h-48 display-block mx-auto" loading="lazy">
           <div class="has-tooltip mt-2">
             <span class="tooltip rounded shadow-lg p-1 bg-blue-100">{{ data.label }}</span>
             <h3 class="text-md md:truncate md:underline">{{ data.label }}</h3>
