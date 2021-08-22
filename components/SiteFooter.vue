@@ -1,7 +1,7 @@
 <template>
-  <footer>
-    <h3 class="text-3xl">
-      カレンダー
-    </h3>
+  <footer class="text-center p-2">
+    <small>
+      © アマゾンタイムセール情報ツウ！
+    </small>
   </footer>
 </template>

@@ -4,8 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'アマゾンタイムセール情報通',
-    titleTemplate: '%s | アマゾンタイムセール情報通',
+    title: 'アマゾンタイムセール情報ツウ！',
+    titleTemplate: '%s | アマゾンタイムセール情報ツウ！',
     htmlAttrs: {
       lang: 'ja'
     },
