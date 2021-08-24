@@ -4,7 +4,7 @@
       {{ dateArray[0] }}年{{ dateArray[1] }}月{{ dateArray[2] }}日のアマゾンタイムセール
     </h2>
     <ul class="flex flex-wrap">
-      <li v-for="(data, key) in datas" :key="key" class="w-full py-2 sm:w-1/2 md:w-2/6 sm:p-2 xl:w-1/4">
+      <li v-for="(data, key) in datas" :key="key" class="w-1/2 p-1 sm:w-1/3 md:w-1/4 xl:w-1/5">
         <SaleItem
           :href="data.href"
           :image="data.image"

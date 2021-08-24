@@ -1,13 +1,12 @@
 <template>
-  <a :href="href" target="_blank" class="shadow-lg block p-2 bg-white transform md:scale-95 hover:scale-100">
-    <img :src="image" :alt="label" class="object-contain h-48 display-block mx-auto" loading="lazy">
-    <div class="has-tooltip mt-2">
-      <span class="tooltip rounded shadow-lg p-1 bg-blue-100">{{ label }}</span>
-      <h3 class="text-md md:truncate md:underline">{{ label }}</h3>
-    </div>
-    <p class="flex justify-end items-center mt-2">
+  <a :href="href" target="_blank" class="shadow-lg block bg-white transform md:scale-95 hover:scale-100 overflow-hidden pb-2">
+    <img :src="image" :alt="label" class="object-contain h-24 display-block mx-auto" loading="lazy">
+    <div class="has-tooltip h-12 p-2 overflow-hidden">
       <span v-if="asidePrice" class="pr-2 py-1 leading-4">{{ asidePrice }}</span>
-      <span v-if="price" class="bg-red-600 text-white px-2 py-1 text-xl">¥{{ price }}</span>
+      <h3 class="text-sm">{{ label }}</h3>
+    </div>
+    <p class="items-center absolute top-16">
+      <span v-if="price" class="bg-red-600 bg-opacity-80 text-white px-2 py-1 text-md display-block rounded-r-lg">¥{{ price }}</span>
     </p>
   </a>
 </template>
