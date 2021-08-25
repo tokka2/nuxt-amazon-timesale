@@ -46,7 +46,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/gtm',
   ],
 
   sitemap: {
@@ -60,6 +61,10 @@ export default {
       text: 'アマゾンタイムセール情報ツウ！'
     }
   },
+
+  gtm: {
+    id: 'GTM-58MW2NL'
+  }
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
