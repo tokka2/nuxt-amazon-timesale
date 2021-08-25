@@ -16,17 +16,17 @@ export default {
   props: {
     href: {
       type: String,
-      default: 'abc',
+      default: '',
       required: true
     },
     image: {
       type: String,
-      default: 'abc',
+      default: '',
       required: true
     },
     label: {
       type: String,
-      default: 'abc',
+      default: '',
       required: true
     },
     asidePrice: {
@@ -35,8 +35,7 @@ export default {
     },
     price: {
       type: String,
-      default: 'abc',
-      required: true
+      default: ''
     }
   }
 }

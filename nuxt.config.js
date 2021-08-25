@@ -45,11 +45,20 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-webfontloader'
   ],
 
   sitemap: {
-    hostname: 'https://amazon-time-sale.ipon.biz',
+    hostname: 'https://amazon-time-sale.ipon.biz'
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Kaisei+Decol:wght@700'],
+      display: 'swap',
+      text: 'アマゾンタイムセール情報ツウ！'
+    }
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
