@@ -51,7 +51,8 @@ export default {
   ],
 
   sitemap: {
-    hostname: 'https://amazon-time-sale.ipon.biz'
+    path: '/sitemap.xml',
+    hostname: 'https://ats.ipon.biz'
   },
 
   webfontloader: {
