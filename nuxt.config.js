@@ -47,7 +47,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     'nuxt-webfontloader',
-    '@nuxtjs/gtm',
+    '@nuxtjs/gtm'
   ],
 
   sitemap: {
@@ -63,7 +63,9 @@ export default {
   },
 
   gtm: {
-    id: 'GTM-58MW2NL'
+    id: 'GTM-58MW2NL',
+    pageTracking: true,
+    enabled: true
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
