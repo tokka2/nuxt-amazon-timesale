@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-wrap">
           <div v-for="(day, key) in calendarMake" :key="key" :value="day" class="day-cell">
-            <nuxt-link v-if="checkSelectedDay(day)" class="sale" :to="`/posts/${checkPostPath(day)}`">
+            <nuxt-link v-if="checkSelectedDay(day)" class="sale shadow" :to="`/posts/${checkPostPath(day)}`">
               {{ day }}
             </nuxt-link>
             <span v-else>{{ day }}</span>

@@ -1,9 +1,7 @@
 <template>
   <section class="px-2">
-    <h2 class="badge-promo">
-      <span class="badge-promo-content">
-        {{ dateArray[0] }}年{{ dateArray[1] }}月{{ dateArray[2] }}日
-      </span>
+    <h2 class="border-b-2 p-2 text-xl">
+      {{ dateArray[0] }}年{{ dateArray[1] }}月{{ dateArray[2] }}日
     </h2>
     <ul class="flex flex-wrap mt-2">
       <li v-for="(data, key) in datas" :key="key" class="w-1/2 p-1 sm:w-1/3 md:w-1/4 xl:w-1/5">
