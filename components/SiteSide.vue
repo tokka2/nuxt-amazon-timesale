@@ -105,6 +105,6 @@ export default {
   border-radius: 4px;
   color: #fff;
   line-height: 24px;
-  background-color: #3fb0ff;
+  background-color: #f59e0b;
 }
 </style>

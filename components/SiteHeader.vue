@@ -34,13 +34,13 @@
 }
 
 .site-header:before {
-  background: #a5daff;
+  background: #fbbf24;
   transform-origin: bottom right;
   transform: rotate(1deg);
 }
 
 .site-header:after {
-  background: #3fb0ff;
+  background: #f59e0b;
   transform: rotate(-2deg);
   transform-origin: bottom left;
 }
