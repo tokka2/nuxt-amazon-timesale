@@ -47,7 +47,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     'nuxt-webfontloader',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    '@nuxtjs/feed'
   ],
 
   sitemap: {
@@ -68,6 +69,34 @@ export default {
     pageTracking: true,
     enabled: true
   },
+
+  feed: [
+    // A default feed configuration object
+    {
+      path: '/feed.xml', // The route to your feed.
+      async create(feed) {
+        feed.options = {
+          title: 'アマゾンタイムセール情報ツウ！',
+          link: 'https://ats.ipon.biz/feed.xml',
+          description: 'アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など'
+        }
+
+        await axios.get('https://tokka2.github.io/tokka_amazon_timesale/updated.json').then((updated) => {
+          updated.data.forEach(datetime => {
+            feed.addItem({
+              title: `${datetime} | アマゾンタイムセール情報ツウ！`,
+              id: `${datetime}`,
+              link: `posts/${datetime}`,
+              description: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
+              content: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`
+            })
+          })
+        })
+      }, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2' // Can be: rss2, atom1, json1
+    }
+  ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
