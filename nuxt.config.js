@@ -82,13 +82,16 @@ export default {
         }
 
         await axios.get('https://tokka2.github.io/tokka_amazon_timesale/updated.json').then((updated) => {
-          updated.data.forEach(datetime => {
+          updated.data.reverse().forEach(target => {
+            const array = target.split('-')
+            const datetime = new Date(`${array[0]}/${array[1]}/${array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
             feed.addItem({
-              title: `${datetime} | アマゾンタイムセール情報ツウ！`,
-              id: `https://ats.ipon.biz/posts/${datetime}`,
-              link: `https://ats.ipon.biz/posts/${datetime}`,
-              description: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
-              content: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`
+              title: `${target} | アマゾンタイムセール情報ツウ！`,
+              id: `https://ats.ipon.biz/posts/${target}`,
+              link: `https://ats.ipon.biz/posts/${target}`,
+              description: `${target} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
+              content: `${target} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
+              date: new Date(datetime)
             })
           })
         })
