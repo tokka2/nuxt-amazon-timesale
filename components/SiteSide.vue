@@ -90,6 +90,7 @@ export default {
 <style>
 .day-cell {
   width: 14.2857142857143%;
+  margin-top: 10px;
 }
 .day-cell:nth-of-type(7n-1){
   color: #3b82f6;
