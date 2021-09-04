@@ -85,7 +85,7 @@ export default {
           updated.data.forEach(datetime => {
             feed.addItem({
               title: `${datetime} | アマゾンタイムセール情報ツウ！`,
-              id: `${datetime}`,
+              id: `https://ats.ipon.biz/posts/${datetime}`,
               link: `https://ats.ipon.biz/posts/${datetime}`,
               description: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
               content: `${datetime} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`
