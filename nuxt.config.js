@@ -86,7 +86,7 @@ export default {
             const array = target.split('-')
             const datetime = new Date(`${array[0]}/${array[1]}/${array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
             feed.addItem({
-              title: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報ツウ！`,
+              title: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報ツウ！！`,
               id: `https://ats.ipon.biz/posts/${target}`,
               link: `https://ats.ipon.biz/posts/${target}`,
               description: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
