@@ -48,7 +48,8 @@ export default {
     '@nuxtjs/sitemap',
     'nuxt-webfontloader',
     '@nuxtjs/gtm',
-    '@nuxtjs/feed'
+    '@nuxtjs/feed',
+    ['@nuxtjs/google-adsense']
   ],
 
   sitemap: {
@@ -101,6 +102,9 @@ export default {
     }
   ],
 
+  'google-adsense': {
+    id: 'ca-pub-7621435269197926'
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

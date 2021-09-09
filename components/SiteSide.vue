@@ -30,6 +30,13 @@
         </div>
       </div>
     </div>
+    <div class="mt-4">
+      <adsbygoogle
+        :ad-slot="'7865442458'"
+        :ad-style="{ display: 'block' }"
+        :ad-format="'auto'"
+      />
+    </div>
   </aside>
 </template>
 
