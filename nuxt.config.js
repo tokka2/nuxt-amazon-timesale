@@ -49,12 +49,21 @@ export default {
     'nuxt-webfontloader',
     '@nuxtjs/gtm',
     '@nuxtjs/feed',
-    ['@nuxtjs/google-adsense']
+    ['@nuxtjs/google-adsense'],
+    '@nuxtjs/robots'
   ],
 
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://ats.ipon.biz'
+  },
+
+  robots: {
+    UserAgent: '*',
+    // クローリングしないパスを記述
+    // Disallow: '/preview',
+    // sitemap.xmlのURLを記述
+    Sitemap: 'https://ats.ipon.biz/sitemap.xml',
   },
 
   webfontloader: {
