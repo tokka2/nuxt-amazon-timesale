@@ -93,15 +93,17 @@ export default {
 
         await axios.get('https://tokka2.github.io/tokka_amazon_timesale/updated.json').then((updated) => {
           updated.data.reverse().forEach(target => {
-            const array = target.split('-')
-            const datetime = new Date(`${array[0]}/${array[1]}/${array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
+            const date = target.date || target
+            const date_array = date.split('-')
+            const datetime = new Date(`${date_array[0]}/${date_array[1]}/${date_array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
             feed.addItem({
-              title: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報ツウ！！`,
-              id: `https://ats.ipon.biz/posts/${target}`,
-              link: `https://ats.ipon.biz/posts/${target}`,
-              description: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
-              content: `${array[0]}年${array[1]}月${array[2]}日 | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
-              date: new Date(datetime)
+              title: `${date_array[0]}年${date_array[1]}月${date_array[2]}日 | ${target.title || ''} | アマゾンタイムセール情報ツウ！！`,
+              id: `https://ats.ipon.biz/posts/${date}`,
+              link: `https://ats.ipon.biz/posts/${date}`,
+              description: `${target.content || ''}`,
+              content: `${target.content || ''} | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など`,
+              date: new Date(datetime),
+              image: `${target.image || ''}`
             })
           })
         })
