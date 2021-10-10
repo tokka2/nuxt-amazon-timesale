@@ -18,7 +18,8 @@ export default () => new Vuex.Store({
   actions: {
     async fetchDatetimes ({ commit }) {
       await axios.get(`${this.getters.targetUrl}/updated.json`).then((response) => {
-        commit('setDatetimes', { datetimes: response.data })
+        const items = response.data.map(item => item.date || item)
+        commit('setDatetimes', { datetimes: items })
       })
     }
   }

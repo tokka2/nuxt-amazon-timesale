@@ -63,7 +63,7 @@ export default {
     // クローリングしないパスを記述
     // Disallow: '/preview',
     // sitemap.xmlのURLを記述
-    Sitemap: 'https://ats.ipon.biz/sitemap.xml',
+    Sitemap: 'https://ats.ipon.biz/sitemap.xml'
   },
 
   webfontloader: {
@@ -84,7 +84,7 @@ export default {
     // A default feed configuration object
     {
       path: '/feed.xml', // The route to your feed.
-      async create(feed) {
+      async create (feed) {
         feed.options = {
           title: 'アマゾンタイムセール情報ツウ！',
           link: 'https://ats.ipon.biz/feed.xml',
@@ -92,7 +92,7 @@ export default {
         }
 
         await axios.get('https://tokka2.github.io/tokka_amazon_timesale/updated.json').then((updated) => {
-          updated.data.reverse().forEach(target => {
+          updated.data.reverse().forEach((target) => {
             const date = target.date || target
             const date_array = date.split('-')
             const datetime = new Date(`${date_array[0]}/${date_array[1]}/${date_array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
@@ -129,8 +129,8 @@ export default {
       return Promise.all([
         axios.get(`${targetUrl}/updated.json`)
       ]).then(([updated]) => {
-        return updated.data.map((datetime) => {
-          return { route: `posts/${datetime}`, payload: datetime }
+        return updated.data.map((target) => {
+          return { route: `posts/${target.date || target}`, payload: target.date || target }
         })
       })
     }
