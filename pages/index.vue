@@ -6,6 +6,7 @@
     <ul class="flex flex-wrap mt-2">
       <li v-for="(data, key) in datas" :key="key" class="w-1/2 p-1 sm:w-1/3 md:w-1/4 xl:w-1/5">
         <SaleItem
+          v-if="data.href && data.image && data.label"
           :href="data.href"
           :image="data.image"
           :label="data.label"
