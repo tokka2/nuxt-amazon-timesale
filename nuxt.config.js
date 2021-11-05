@@ -54,8 +54,15 @@ export default {
   ],
 
   sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://ats.ipon.biz'
+    path: '/sitemapindex.xml',
+    hostname: 'https://ats.ipon.biz',
+    gzip: true,
+    sitemaps: [
+      {
+        path: '/sitemap.xml',
+        // ...
+      }
+    ]
   },
 
   robots: {
