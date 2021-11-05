@@ -49,28 +49,31 @@ export default {
     'nuxt-webfontloader',
     '@nuxtjs/gtm',
     '@nuxtjs/feed',
-    ['@nuxtjs/google-adsense'],
-    '@nuxtjs/robots'
+    ['@nuxtjs/google-adsense']
   ],
 
   sitemap: {
+    xmlNs: 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
     path: '/sitemapindex.xml',
     hostname: 'https://ats.ipon.biz',
     gzip: true,
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    },
     sitemaps: [
       {
+        xmlNs: 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
         path: '/sitemap.xml',
+        defaults: {
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: new Date()
+        }
         // ...
       }
     ]
-  },
-
-  robots: {
-    UserAgent: '*',
-    // クローリングしないパスを記述
-    // Disallow: '/preview',
-    // sitemap.xmlのURLを記述
-    Sitemap: 'https://ats.ipon.biz/sitemap.xml'
   },
 
   webfontloader: {
