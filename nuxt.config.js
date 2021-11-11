@@ -104,10 +104,10 @@ export default {
         await axios.get('https://tokka2.github.io/tokka_amazon_timesale/updated.json').then((updated) => {
           updated.data.reverse().forEach((target) => {
             const date = target.date || target
-            const date_array = date.split('-')
-            const datetime = new Date(`${date_array[0]}/${date_array[1]}/${date_array[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
+            const dateArray = date.split('-')
+            const datetime = new Date(`${dateArray[0]}/${dateArray[1]}/${dateArray[2]}`).toLocaleString({ timeZone: 'Asia/Tokyo' })
             feed.addItem({
-              title: `${date_array[0]}年${date_array[1]}月${date_array[2]}日 | ${target.title || ''} | アマゾンタイムセール情報ツウ！！`,
+              title: `${dateArray[0]}年${dateArray[1]}月${dateArray[2]}日 | ${target.title || ''} | アマゾンタイムセール情報ツウ！！`,
               id: `https://ats.ipon.biz/posts/${date}`,
               link: `https://ats.ipon.biz/posts/${date}`,
               description: `${target.content || ''}`,
