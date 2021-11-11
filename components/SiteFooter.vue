@@ -25,7 +25,6 @@ export default {
       monthlyRange.push(strYearMonth)
     }
     monthlyRange.push(this.convertToStr(to, 0))
-    console.log({ monthlyRange })
     return {
       monthArray: monthlyRange
     }
