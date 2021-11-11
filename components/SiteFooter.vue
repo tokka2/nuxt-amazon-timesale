@@ -2,7 +2,7 @@
   <footer class="text-center p-2">
     <ul class="flex flex-wrap justify-center p-4">
       <li v-for="(month, key) in monthArray" :key="key" class="p-2">
-        <a :href="`/month/${month}`" class="text-yellow-500">{{ `${month.split('-')[0]}年${month.split('-')[1]}月` }}</a>
+        <a :href="`/month/${month}`" class="text-yellow-600">{{ `${month.split('-')[0]}年${month.split('-')[1]}月` }}</a>
       </li>
     </ul>
     <div>

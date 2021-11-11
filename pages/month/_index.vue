@@ -4,7 +4,7 @@
     <ul class="mt-2 list-disc pl-4">
       <li v-for="(data, key) in datas" :key="key" class="mt-2">
         <a v-if="data.date" :href="`/posts/${data.date}`" class="p-2 block text-yellow-500">{{ data.title }}</a>
-        <a v-else :href="`/posts/${data}`" class="p-2 block text-yellow-500">{{ data }}</a>
+        <a v-else :href="`/posts/${data}`" class="p-2 block text-yellow-600">{{ data }}</a>
       </li>
     </ul>
   </section>
