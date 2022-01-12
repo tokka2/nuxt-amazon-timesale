@@ -17,7 +17,14 @@
       "src": "/sw.js",
       "continue": true,
       "headers": {
-        "Cache-Control": "public, max-age=86400, must-revalidate, s-maxage=60, stale-while-revalidate=3600",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=86400, must-revalidate, s-maxage=60, stale-while-revalidate=720",
         "Service-Worker-Allowed": "/"
       }
     }
