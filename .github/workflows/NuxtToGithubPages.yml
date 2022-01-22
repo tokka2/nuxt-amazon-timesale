@@ -1,5 +1,12 @@
 name: Build Nuxt
-on: [push]
+on:
+  schedule:
+    # JSTで 毎日 10:00 に設定
+    - cron: 10 01 * * *
+  repository_dispatch:
+    types: [check-link]
+  workflow_dispatch:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
