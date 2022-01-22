@@ -1,14 +1,22 @@
 name: Build Nuxt
 on: [push]
 jobs:
-  build_vue:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    name: Build Nuxt
     steps:
-    - uses: actions/checkout@v2
-    - id: Build-Vue
-      uses: ashkantaravati/NuxtToGithubPages@v1.0
-      with:
-        username: 'tokka2'
-        reponame: 'nuxt-amazon-timesale'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install and Generate 🔧
+        run: |
+          yarn
+          yarn generate
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
