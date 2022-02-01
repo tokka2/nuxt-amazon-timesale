@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2022-02", {data:[{dateArray:["2022","02"],datas:[{date:"2022-02-01-0138",title:"【本日限定】モバイルバッテリー、イヤホンとマートウォッチがお買い得; セール価格: ￥1,999 - ￥2,999",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F41yyFoM9gDL.jpg",content:"特選タイムセール￥1,999–￥2,999【本日限定】モバイルバッテリー、イヤホンとマートウォッチがお買い得終了まで 13:21:33"}]}],fetch:{},mutations:[]});
