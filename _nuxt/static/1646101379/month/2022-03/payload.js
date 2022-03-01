@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2022-03", {data:[{dateArray:["2022","03"],datas:[{date:"2022-03-01-0155",title:"【本日限定】ビューティー用品がお買い得; セール価格: ￥6,399 - ￥7,999",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F31vMT8YPbgL.jpg",content:"特選タイムセール￥6,399–￥7,999【本日限定】ビューティー用品がお買い得終了まで 12:59:57"}]}],fetch:{},mutations:[]});
