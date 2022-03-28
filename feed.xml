@@ -4,9 +4,18 @@
         <title>アマゾンタイムセール情報ツウ！</title>
         <link>https://ats.ipon.biz/feed.xml</link>
         <description>アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など</description>
-        <lastBuildDate>Sun, 27 Mar 2022 02:31:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Mar 2022 02:45:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[2022年03月28日 | 食品・飲料がお買い得; セール価格: ￥260 - ￥10,328 | アマゾンタイムセール情報ツウ！！]]></title>
+            <link>https://ats.ipon.biz/posts/2022-03-28-0211</link>
+            <guid>https://ats.ipon.biz/posts/2022-03-28-0211</guid>
+            <pubDate>Mon, 28 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[最大33%OFF特選タイムセール最大33%OFF特選タイムセール食品・飲料がお買い得]]></description>
+            <content:encoded><![CDATA[最大33%OFF特選タイムセール最大33%OFF特選タイムセール食品・飲料がお買い得 | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など]]></content:encoded>
+            <enclosure url="https://m.media-amazon.com/images/I/51ABlTU3CjL.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[2022年03月27日 | 食品・飲料がお買い得; セール価格: ￥260 - ￥10,328 | アマゾンタイムセール情報ツウ！！]]></title>
             <link>https://ats.ipon.biz/posts/2022-03-27-0201</link>
