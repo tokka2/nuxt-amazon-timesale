@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2022-04", {data:[{dateArray:["2022","04"],datas:[{date:"2022-04-01-0228",title:"【本日限定】Bluetooth イヤホン 除菌器などがお買い得; セール価格: ￥1,580 - ￥7,180",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F410w7OOfqVL.jpg",content:"最大20%OFF特選タイムセール最大20%OFF特選タイムセール【本日限定】Bluetooth イヤホン 除菌器などがお買い得"}]}],fetch:{},mutations:[]});
