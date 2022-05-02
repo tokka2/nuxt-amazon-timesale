@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/month/2022-05", {data:[{dateArray:["2022","05"],datas:[{date:"2022-05-01-0254",title:"アイリスのリンサー・高圧洗浄機などがお買得; セール価格: ￥998 - ￥21,800",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F419e-aRrvpL.jpg",content:"最大40%OFF特選タイムセール最大40%OFF特選タイムセールアイリスのリンサー・高圧洗浄機などがお買得"}]}],fetch:{},mutations:[]});
