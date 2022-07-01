@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2022-07", {data:[{dateArray:["2022","07"],datas:[{date:"2022-07-01-0300",title:"【本日限定】夏用卓上冷風機とスマートウォッチがお買い得; セール価格: ￥3,180 - ￥3,980",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F4108-j4H87L._AC_UF226,226_FMjpg_.jpg",content:"最大20%OFF特選タイムセール最大20%OFF特選タイムセール【本日限定】夏用卓上冷風機とスマートウォッチがお買い得"}]}],fetch:{},mutations:[]});
