@@ -37,6 +37,10 @@
         :ad-format="'auto'"
       />
     </div>
+    <div class="mt-4">
+      <a href="https://server.r12n.net/" target="_blank" rel="noopener">R12N Server</a><br>
+	    <p style="font-size: .8em;">測定値で高速で格安なオススメレンタルサーバーを比較・紹介していてアマゾンタイムセール情報ツウ！でも参考にさせていただきました</p>
+    </div>
   </aside>
 </template>
 
