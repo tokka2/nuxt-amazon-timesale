@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2023-01", {data:[{dateArray:["2023","01"],datas:[{date:"2023-01-01-0210",title:"お正月なので最大50%OFFカフェ工房セールやります！; ",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F41bfOj50ULL._AC_UF226,226_FMjpg_.jpg",content:"最大24%OFF特選タイムセール最大24%OFF特選タイムセールお正月なので最大50%OFFカフェ工房セールやります！"}]}],fetch:{},mutations:[]});
