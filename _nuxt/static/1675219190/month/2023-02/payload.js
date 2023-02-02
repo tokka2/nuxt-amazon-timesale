@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/month/2023-02", {data:[{dateArray:["2023","02"],datas:[{date:"2023-02-01-0212",title:"【本日限定】シャワーヘッドとイヤホンなどがお買い得; ",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F31JJ0xbkWYL._AC_UF226,226_FMjpg_.jpg",content:"最大54%OFF特選タイムセール最大54%OFF特選タイムセール【本日限定】シャワーヘッドとイヤホンなどがお買い得"}]}],fetch:{},mutations:[]});
