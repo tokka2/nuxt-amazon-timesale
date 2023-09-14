@@ -11,12 +11,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          node-version: "14.x"
 
-      # run any `bun` or `bunx` command
-      - run: bun install
-      - run: bun generate
+      - name: Install and Generate 🔧
+        run: |
+          yarn
+          yarn generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
