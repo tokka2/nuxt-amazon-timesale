@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+        env:
+          NODE_OPTIONS: "--max_old_space_size=8192 --dns-result-order=ipv4first"
       - run: bun install
       - run: bun generate
 
