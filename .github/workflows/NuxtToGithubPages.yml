@@ -12,14 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: oven-sh/setup-bun@v1
-        with:
-          persist-credentials: false
+        - uses: actions/checkout@v3
+        - uses: oven-sh/setup-bun@v1
 
-      - name: Install and Generate 🔧
-        run: |
-          bun install
-          bun generate
+        - run: bun install
+        - run: bun generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
