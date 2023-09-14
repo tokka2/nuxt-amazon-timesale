@@ -1,8 +1,8 @@
 name: Build Nuxt
 on:
-  schedule:
-    # JSTで 毎日 10:00 に設定
-    - cron: 10 01 * * *
+  # schedule:
+  # JSTで 毎日 10:00 に設定
+  # - cron: 10 01 * * *
   repository_dispatch:
     types: [check-link]
   workflow_dispatch:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [18.x]
     steps:
       - uses: actions/checkout@v3
       - uses: oven-sh/setup-bun@v1
