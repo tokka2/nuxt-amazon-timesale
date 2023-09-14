@@ -19,11 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Install and Generate 🔧
-        run: |
-          yarn
-          yarn generate
+      - run: yarn
+      - run: yarn generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
