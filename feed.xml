@@ -4,9 +4,18 @@
         <title>アマゾンタイムセール情報ツウ！</title>
         <link>https://ats.ipon.biz/feed.xml</link>
         <description>アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など</description>
-        <lastBuildDate>Tue, 14 Nov 2023 02:03:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Nov 2023 02:06:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[2023年11月15日 | 【冬到来】ぽかぽか家電セール;  | アマゾンタイムセール情報ツウ！！]]></title>
+            <link>https://ats.ipon.biz/posts/2023-11-15-0135</link>
+            <guid>https://ats.ipon.biz/posts/2023-11-15-0135</guid>
+            <pubDate>Wed, 15 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[最大18%OFFセール最大18%OFFセール【冬到来】ぽかぽか家電セール]]></description>
+            <content:encoded><![CDATA[最大18%OFFセール最大18%OFFセール【冬到来】ぽかぽか家電セール | アマゾンタイムセール情報を掲載中！PC・PC周辺機器・デジカメ・家電など]]></content:encoded>
+            <enclosure url="https://m.media-amazon.com/images/I/719knioFNZL._AC_UF226,226_FMjpg_.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[2023年11月14日 | 【冬到来】ぽかぽか家電セール;  | アマゾンタイムセール情報ツウ！！]]></title>
             <link>https://ats.ipon.biz/posts/2023-11-14-0133</link>
