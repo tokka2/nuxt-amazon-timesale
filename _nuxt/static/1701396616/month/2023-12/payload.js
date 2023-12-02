@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/month/2023-12", {data:[{dateArray:["2023","12"],datas:[{date:"2023-12-01-0142",title:"Fire HD 8 とNew Fire HD 10 キッズプロスマイルセットでお買い得; ",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F4106odF57gL._AC_UF226,226_FMjpg_.jpg",content:"40%OFFブラックフライデー40%OFFブラックフライデーFire HD 8 とNew Fire HD 10 キッズプロスマイルセットでお買い得0%カートに追加済み"}]}],fetch:{},mutations:[]});
