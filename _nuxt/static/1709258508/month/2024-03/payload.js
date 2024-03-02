@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/month/2024-03", {data:[{dateArray:["2024","03"],datas:[{date:"2024-03-01-0135",title:"パソコン・ゲーミング・周辺機器・スマホ・カメラがお買い得; ",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F61ETDcgskoL._AC_UF226,226_FMjpg_.jpg",content:"最大38%OFFタイムセール最大38%OFFタイムセールパソコン・ゲーミング・周辺機器・スマホ・カメラがお買い得"}]}],fetch:{},mutations:[]});
