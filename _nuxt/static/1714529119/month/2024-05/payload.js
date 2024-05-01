@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/month/2024-05", {data:[{dateArray:["2024","05"],datas:[{date:"2024-05-01-0139",title:"スマートホーム商品がお買い得; ",image:"https:\u002F\u002Fm.media-amazon.com\u002Fimages\u002FI\u002F31iVlW57S-L._AC_UF226,226_FMjpg_.jpg",content:"最大29%OFFタイムセール最大29%OFFタイムセールスマートホーム商品がお買い得"}]}],fetch:{},mutations:[]});
