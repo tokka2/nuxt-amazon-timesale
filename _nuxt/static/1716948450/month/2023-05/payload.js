@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/month/2023-05", {data:[{dateArray:["2023","05"],datas:[]}],fetch:{},mutations:[]});
